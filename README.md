@@ -52,5 +52,8 @@ https://www.examtopics.com/ : website which offers dump question for the certifi
   2. It provides real-time insights into resource utilization, operational performance, and overall application health, enabling proactive maintenance and optimization.
 
 **Amazone Athena**
-  1. Amazon Athena is an interactive query service that allows users to analyze data directly in Amazon S3 using standard SQL without the need to set up complex data warehouses or transformation processes.
+  1. Amazon Athena is an interactive query service that allows users to analyze data directly in Amazon **S3 using standard SQL** without the need to set up complex data warehouses or transformation processes.
 
+**AWS Glue**
+  1. AWS Glue is a fully managed extract, transform, and load (ETL) service designed for preparing and loading data for analytics.
+  2. It makes it easy to discover, catalog, and transform data from various sources, allowing users to build data workflows in a scalable and serverless manner.

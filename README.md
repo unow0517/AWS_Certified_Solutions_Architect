@@ -26,6 +26,6 @@ https://www.examtopics.com/ : website which offers dump question for the certifi
 **S3 Cross-Region Replication**
   1. feature that automatically replicates data stored in one Amazon S3 bucket to another S3 bucket in a different AWS region. This replication helps enhance data durability, availability, and compliance by ensuring that data is stored across multiple geographic locations.
 
-**AWS Snowball Edge Storage Optimized**\
+**AWS Snowball Edge Storage Optimized**
   1. a highly versatile, portable storage and compute device used for transferring large amounts of data in and out of AWS. Designed to handle petabyte-scale data transfers.
   2. Provides up to 80 TB of usable storage capacity.

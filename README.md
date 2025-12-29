@@ -19,41 +19,75 @@ https://www.examtopics.com/ : website which offers dump question for the certifi
 **S3 Transfer Acceleration**
   1. This feature utilizes Amazon CloudFront's globally distributed edge locations to speed up uploads to S3.
   2. It significantly reduces the time it takes to upload large volumes of data from geographic locations.
+<br>
 
 **CloudFront**
   1. Amazon CloudFront is a globally distributed Content Delivery Network (CDN) service that accelerates the delivery of data, videos, applications, and APIs to users. It works by caching copies of content at edge locations around the world, allowing users to access data from the nearest geographical location, thereby reducing latency.
+<br>
 
 **S3 Cross-Region Replication**
   1. feature that automatically replicates data stored in one Amazon S3 bucket to another S3 bucket in a different AWS region. This replication helps enhance data durability, availability, and compliance by ensuring that data is stored across multiple geographic locations.
+<br>
 
 **AWS Snowball Edge Storage Optimized**
   1. a highly versatile, portable storage and compute device used for transferring large amounts of data in and out of AWS. Designed to handle petabyte-scale data transfers.
   2. Provides up to 80 TB of usable storage capacity.
+<br>
 
 **Amazon Elastic Block Store (EBS)**
   1. a high-performance block storage service designed for use with Amazon EC2 (Elastic Compute Cloud).
   2. It provides scalable storage volumes that can be attached to EC2 instances, enabling low-latency access to data for applications such as databases, file systems, and enterprise applications.
+<br>
 
 **AWS Edge Locations**
   1. data centers located in various geographical regions around the world, primarily used for delivering content via Amazon CloudFront, AWS's Content Delivery Network (CDN).
   2. These locations are strategically placed to provide low-latency access to applications, ensuring faster data transfer and improved user experience.
+<br>
 
 **On Demand**
   1. only when user needs
   2. paying what you use
+<br>
 
 **Amazon Red Shift**
   1. a fully managed, petabyte-scale data warehouse service in the cloud.
   2. It allows users to run complex queries and analyze large amounts of data quickly.
   3. Redshift is optimized for high-performance analysis of structured and semi-structured data, making it a key component for data analytics and business intelligence solutions.
+<br>
 
 **CloudWatch**
   1. a monitoring and management service designed for AWS resources and applications.
   2. It provides real-time insights into resource utilization, operational performance, and overall application health, enabling proactive maintenance and optimization.
+<br>
 
 **Amazone Athena**
   1. Amazon Athena is an interactive query service that allows users to analyze data directly in Amazon **S3 using standard SQL** without the need to set up complex data warehouses or transformation processes.
+<br>
 
 **AWS Glue**
   1. AWS Glue is a fully managed extract, transform, and load (ETL) service designed for preparing and loading data for analytics.
   2. It makes it easy to discover, catalog, and transform data from various sources, allowing users to build data workflows in a scalable and serverless manner.
+<br>
+
+**PrincipalOrgID**
+  1. an attribute used in AWS Identity and Access Management (IAM) policies, particularly in organizations that leverage AWS Organizations.
+  2. This attribute is utilized to manage permissions effectively across multiple AWS accounts within an organization.
+<br>
+
+**AWS Organizations**
+  1. a service that enables you to manage multiple AWS accounts centrally.
+  2. It allows you to create and manage an organization with multiple AWS accounts while applying policies and controlling access to resources.
+  3. This helps organizations streamline their operations and manage billing and governance across accounts.
+<br>
+
+**Principal in AWS Context**<br>
+In the context of Amazon Web Services (AWS) IAM (Identity and Access Management), a principal refers to an entity that can perform actions on AWS resources. This entity can be:
+1. Users: Individual IAM users within your AWS account.
+2. Roles: IAM roles that can be assumed by users or services.
+3. Services: AWS services like EC2, Lambda, or S3 that can interact with other AWS resources.
+4. Federated Users: Users authenticated through third-party identity providers.
+<br>
+
+**Organizational Units (OUs)**
+  1. enabling you to group AWS accounts in a hierarchical manner for better management, governance, and policy application.
+  2. Production OU, Testing OU...

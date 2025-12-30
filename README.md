@@ -101,8 +101,13 @@ In the context of Amazon Web Services (AWS) IAM (Identity and Access Management)
   1. critical components that facilitate communication between different networks.
 <br>
 
+**Gateway VPC  Endpoint**
+  1. allow VPC to access AWS services, like S3 or Dynamo DB
+<br>
+
 **Instance Profile**
   1. a container for an IAM role that you can use to grant Amazon EC2 instances permissions to interact with other AWS services.
+  2. EC2 shoud have instance Profile, not role.
 <br>
 
 **IAM (Identity and Access Management)**
@@ -115,3 +120,14 @@ In the context of Amazon Web Services (AWS) IAM (Identity and Access Management)
   2. WebserverRole, S3AccessRole...
 <br>
 
+**Endpoint**
+  1. refers to a specific URL or network address where requests are sent to access AWS services.
+<br>
+
+**NAT(Network Address Translation) Device**
+  1. allows instances in a private subnet to access the internet while preventing the internet from initiating connections to those instances.
+<br>
+
+**EBS (Elastic Volumn Store)**
+   1. persistent block storage service designed for use with Amazon EC2 instances.
+   2. It provides highly available and durable storage that can be easily attached to instances, making it suitable for a wide range of applications.

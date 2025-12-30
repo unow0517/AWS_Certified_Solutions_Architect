@@ -91,3 +91,13 @@ In the context of Amazon Web Services (AWS) IAM (Identity and Access Management)
 **Organizational Units (OUs)**
   1. enabling you to group AWS accounts in a hierarchical manner for better management, governance, and policy application.
   2. Production OU, Testing OU...
+<br>
+
+**VPC (Virtual Private Cloud)**
+  1. allows you to create a private network within Amazon's cloud where you can launch AWS resources in a logically isolated environment.
+
+**Gateway**
+  1. critical components that facilitate communication between different networks.
+
+**Instance Profile**
+  1. a container for an IAM role that you can use to grant Amazon EC2 instances permissions to interact with other AWS services.

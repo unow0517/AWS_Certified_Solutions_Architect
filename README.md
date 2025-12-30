@@ -95,9 +95,23 @@ In the context of Amazon Web Services (AWS) IAM (Identity and Access Management)
 
 **VPC (Virtual Private Cloud)**
   1. allows you to create a private network within Amazon's cloud where you can launch AWS resources in a logically isolated environment.
+<br>
 
 **Gateway**
   1. critical components that facilitate communication between different networks.
+<br>
 
 **Instance Profile**
   1. a container for an IAM role that you can use to grant Amazon EC2 instances permissions to interact with other AWS services.
+<br>
+
+**IAM (Identity and Access Management)**
+  1.  helps you control access to your AWS resources.
+  2.  With IAM, you can create and manage AWS users and groups, and use permissions to allow or deny their access to AWS resources, ensuring only authorized users can perform actions.
+<br>
+
+**IAM Role**
+  1. an IAM identity that you can create in your AWS account.
+  2. WebserverRole, S3AccessRole...
+<br>
+

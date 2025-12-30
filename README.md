@@ -131,3 +131,4 @@ In the context of Amazon Web Services (AWS) IAM (Identity and Access Management)
 **EBS (Elastic Volumn Store)**
    1. persistent block storage service designed for use with Amazon EC2 instances.
    2. It provides highly available and durable storage that can be easily attached to instances, making it suitable for a wide range of applications.
+   3. WHy EBS over S3? S3 is for the access through internet. EBS is mainly for EC2.

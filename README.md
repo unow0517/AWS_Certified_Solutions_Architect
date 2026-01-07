@@ -169,3 +169,5 @@ In the context of Amazon Web Services (AWS) IAM (Identity and Access Management)
 **AWS Direct Connect**
   1. a network service that enables users to establish a dedicated, high-bandwidth, low-latency connection between their on-premises infrastructure and Amazon Web Services (AWS).
   2. This service provides a more reliable and consistent network experience compared to internet-based connections.
+
+Q7

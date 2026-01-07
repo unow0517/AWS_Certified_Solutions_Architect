@@ -154,3 +154,18 @@ In the context of Amazon Web Services (AWS) IAM (Identity and Access Management)
   1. IT infrastructure and data that are housed within an organization's physical location.
   2. Unlike cloud services that operate over the internet, on-premise solutions require businesses to buy, install, and manage all hardware and software internally.
 <br>
+
+**Snowball Edge**
+  1. a data transfer and edge computing device provided by Amazon Web Services (AWS).
+  2. It is designed to help organizations efficiently move large amounts of data into and out of AWS, often in situations where internet bandwidth is limited or non-existent.
+  3. Physical Device that user get it delievered.
+<br>
+
+**Edge Computing**
+  1. refers to the practice of processing and analyzing data closer to the source of data generation rather than relying solely on centralized cloud data centers.
+  2. This approach minimizes latency, reduces bandwidth use, and enhances real-time data processing capabilities.
+<br>
+
+**AWS Direct Connect**
+  1. a network service that enables users to establish a dedicated, high-bandwidth, low-latency connection between their on-premises infrastructure and Amazon Web Services (AWS).
+  2. This service provides a more reliable and consistent network experience compared to internet-based connections.

@@ -10,7 +10,7 @@
 - I took [Udemy Course](https://www.udemy.com/share/106WtA3@PZipmHbtGDd8yMYGf167glVsvIQmBIpirjpuo_ByMCr8DYGtfkcrzeIpy59J85DpWQ==/), but couldn't reach the end.
 
 ## How To Start
-- Start with dump question learn neccessary concepts
+- Start with dump question to learn neccessary concepts
 
 ## Website 
 https://www.examtopics.com/ : website which offers dump question for the certification.  
@@ -132,3 +132,25 @@ In the context of Amazon Web Services (AWS) IAM (Identity and Access Management)
    1. persistent block storage service designed for use with Amazon EC2 instances.
    2. It provides highly available and durable storage that can be easily attached to instances, making it suitable for a wide range of applications.
    3. WHy EBS over S3? S3 is for the access through internet. EBS is mainly for EC2.
+<br>
+
+**EFS (Elastic File System)**
+  1. a scalable, fully managed file storage service designed to be used with Amazon Web Services (AWS) cloud computing.
+  2. It provides a simple, serverless, and elastic file storage solution that can grow and shrink automatically as files are added or removed.
+  3. Implement Amazon EFS as shared storage for all EC2 instances behind the ALB. This ensures high availability, scalability, and consistent data access across Availability Zones with minimal operational overhead.
+<br>
+
+**AZ (Availability Zone)**
+  1. isolated locations within an AWS region designed to protect applications from failures in other zones.
+  2. Each region comprises multiple AZs, which are designed to be independent in terms of power, networking, and connectivity.
+<br>
+
+**NFS (Network File System)**
+  1. a distributed file system protocol that allows users to access files over a network as if they were on a local disk.
+  2. Primarily used in UNIX/Linux environments, NFS enables file sharing among multiple machines seamlessly.
+<br>
+
+**On-Premise**
+  1. IT infrastructure and data that are housed within an organization's physical location.
+  2. Unlike cloud services that operate over the internet, on-premise solutions require businesses to buy, install, and manage all hardware and software internally.
+<br>

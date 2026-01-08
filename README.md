@@ -187,6 +187,9 @@ In the context of Amazon Web Services (AWS) IAM (Identity and Access Management)
 <br>
 
 **Decoupling**
-  1.refers to the architectural design principle of separating components of a system to minimize dependencies between them. 
-  2.In the context of application architecture  
+  1. refers to the architectural design principle of separating components of a system to minimize dependencies between them. 
 <br>
+
+**Auto Scaling Group (ASG)**
+  1. an AWS service that automatically adjusts the number of Amazon EC2 instances in response to the specific conditions you define.
+  2. This ensures that the application has the right amount of resources available to handle varying loads while maintaining performance and minimizing costs.

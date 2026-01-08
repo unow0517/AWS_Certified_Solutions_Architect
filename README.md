@@ -174,6 +174,7 @@ In the context of Amazon Web Services (AWS) IAM (Identity and Access Management)
 **Amazon Kinesis Data Analytics**
   1. is a fully managed service that allows you to process and analyze streaming data in real-time.
   2. It enables users to easily ingest, process, and analyze data streams using standard SQL, opening up opportunities for interactive dashboards and real-time analytics.
+  3. For analytic purpose
 <br>
 
 **Amazon Simple Notification Service**

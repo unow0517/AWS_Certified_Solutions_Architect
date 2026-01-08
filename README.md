@@ -169,5 +169,24 @@ In the context of Amazon Web Services (AWS) IAM (Identity and Access Management)
 **AWS Direct Connect**
   1. a network service that enables users to establish a dedicated, high-bandwidth, low-latency connection between their on-premises infrastructure and Amazon Web Services (AWS).
   2. This service provides a more reliable and consistent network experience compared to internet-based connections.
+<br>
 
-Q7
+**Amazon Kinesis Data Analytics**
+  1. is a fully managed service that allows you to process and analyze streaming data in real-time.
+  2. It enables users to easily ingest, process, and analyze data streams using standard SQL, opening up opportunities for interactive dashboards and real-time analytics.
+<br>
+
+**Amazon Simple Notification Service**
+  1. a fully managed messaging service designed to facilitate the sending of notifications and messages between distributed systems and applications.
+  2. It enables users to send messages to a variety of endpoints, such as mobile devices, email addresses, and other applications seamlessly and effectively.
+<br>
+
+**Amazon Simple Queue Service (Amazon SOS)**
+  1. is a fully managed message queuing service that enables applications to communicate and coordinate through message-based workflows.
+  2. SQS allows decoupling of components in distributed systems, which enhances scalability and reliability.
+<br>
+
+**Decoupling**
+  1.refers to the architectural design principle of separating components of a system to minimize dependencies between them. 
+  2.In the context of application architecture  
+<br>

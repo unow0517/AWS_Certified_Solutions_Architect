@@ -194,3 +194,7 @@ In the context of Amazon Web Services (AWS) IAM (Identity and Access Management)
 **Auto Scaling Group (ASG)**
   1. an AWS service that automatically adjusts the number of Amazon EC2 instances in response to the specific conditions you define.
   2. This ensures that the application has the right amount of resources available to handle varying loads while maintaining performance and minimizing costs.
+
+**fan-out**
+  1. a messaging pattern commonly used in distributed systems, particularly in event-driven architectures.
+  2. It refers to the practice of sending a single message to multiple consumers simultaneously, allowing each subscriber to receive the same message without duplicating the effort of sending it multiple times.

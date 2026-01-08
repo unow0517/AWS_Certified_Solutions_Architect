@@ -198,3 +198,7 @@ In the context of Amazon Web Services (AWS) IAM (Identity and Access Management)
 **fan-out**
   1. a messaging pattern commonly used in distributed systems, particularly in event-driven architectures.
   2. It refers to the practice of sending a single message to multiple consumers simultaneously, allowing each subscriber to receive the same message without duplicating the effort of sending it multiple times.
+
+**AWS CloudTrail**
+  1. AWS CloudTrail is a service that enables governance, compliance, and operational and risk auditing of your AWS account.
+  2. It continuously monitors and records account activity across your AWS infrastructure, providing logs of actions taken by users, roles, or AWS services.

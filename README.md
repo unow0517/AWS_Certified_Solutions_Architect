@@ -206,4 +206,15 @@ In the context of Amazon Web Services (AWS) IAM (Identity and Access Management)
   2. It continuously monitors and records account activity across your AWS infrastructure, providing logs of actions taken by users, roles, or AWS services.
 <br>
 
-Q8 done
+**AWS DataSync**
+  1. a service designed to simplify and automate the process of transferring data between on-premises storage systems and AWS storage services, as well as between different AWS storage services.
+  2. It accelerates and secures the transfer of large datasets, making it ideal for various use cases.
+<br>
+
+**File Lifecycle management**
+  1. the process of managing files throughout their lifecycle, from creation to deletion.
+  2. This practice enables organizations to optimize storage resources, ensure compliance, and maintain efficient workflows.
+<br>
+
+**Amazon FSx**
+  1. a fully managed **file storage service** designed to provide high-performance storage for **machine learning, web applications, and other workloads that require fast, scalable file storage**.

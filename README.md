@@ -218,3 +218,19 @@ In the context of Amazon Web Services (AWS) IAM (Identity and Access Management)
 
 **Amazon FSx**
   1. a fully managed **file storage service** designed to provide high-performance storage for **machine learning, web applications, and other workloads that require fast, scalable file storage**.
+<br>
+
+**Amazon S3 Glacier Deep Archive**
+  1. a low-cost cloud storage service designed for data archiving and long-term backup.
+  2. It is part of Amazon S3 (Simple Storage Service) and is specifically optimized for infrequently accessed data that needs to be stored for extended periods.
+<br>
+
+**SMB(Server Message Block)**
+  1. a network protocol used for providing shared access to files, printers, and serial ports between nodes on a network.
+  2.  It enables applications on one computer to read and write to files and request services from server programs in a computer network.
+<br>
+
+**Amazon S3 File Gateway**
+  1. a hybrid cloud storage service that allows on-premises applications to access Amazon S3 storage through standard file protocols such as NFS (Network File System) and SMB (Server Message Block).
+  2. This service makes it easy to integrate on-premises environments with cloud storage, providing essential capabilities for backup, archiving, and cloud data processing.
+<br>

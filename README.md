@@ -29,9 +29,10 @@ https://www.examtopics.com/ : website which offers dump question for the certifi
   1. feature that automatically replicates data stored in one Amazon S3 bucket to another S3 bucket in a different AWS region. This replication helps enhance data durability, availability, and compliance by ensuring that data is stored across multiple geographic locations.
 <br>
 
-**AWS Snowball Edge Storage Optimized**
+**AWS Snowball**
   1. a highly versatile, portable storage and compute device used for transferring large amounts of data in and out of AWS. Designed to handle petabyte-scale data transfers.
   2. Provides up to 80 TB of usable storage capacity.
+  3. Big amount of Data into and out of AWS
 <br>
 
 **Amazon Elastic Block Store (EBS)**
@@ -155,12 +156,6 @@ In the context of Amazon Web Services (AWS) IAM (Identity and Access Management)
   2. Unlike cloud services that operate over the internet, on-premise solutions require businesses to buy, install, and manage all hardware and software internally.
 <br>
 
-**Snowball Edge**
-  1. a data transfer and edge computing device provided by Amazon Web Services (AWS).
-  2. It is designed to help organizations efficiently move large amounts of data into and out of AWS, often in situations where internet bandwidth is limited or non-existent.
-  3. Physical Device that user get it delievered.
-<br>
-
 **Edge Computing**
   1. refers to the practice of processing and analyzing data closer to the source of data generation rather than relying solely on centralized cloud data centers.
   2. This approach minimizes latency, reduces bandwidth use, and enhances real-time data processing capabilities.
@@ -223,6 +218,7 @@ In the context of Amazon Web Services (AWS) IAM (Identity and Access Management)
 **Amazon S3 Glacier Deep Archive**
   1. a low-cost cloud storage service designed for data archiving and long-term backup.
   2. It is part of Amazon S3 (Simple Storage Service) and is specifically optimized for infrequently accessed data that needs to be stored for extended periods.
+  3. Low cost for Data Archiving.
 <br>
 
 **SMB(Server Message Block)**
@@ -234,3 +230,17 @@ In the context of Amazon Web Services (AWS) IAM (Identity and Access Management)
   1. a hybrid cloud storage service that allows on-premises applications to access Amazon S3 storage through standard file protocols such as NFS (Network File System) and SMB (Server Message Block).
   2. This service makes it easy to integrate on-premises environments with cloud storage, providing essential capabilities for backup, archiving, and cloud data processing.
 <br>
+
+**Amazon Cognito user pools**
+  1. Amazon Cognito provides authentication, authorization, and user management for your web and mobile apps.
+  2. Users can sign in directly with a user name and password, or through a trusted third party.
+<br>
+
+**Amazon RDS**
+  1. a managed cloud database service offered by Amazon Web Services (AWS) that simplifies the setup, operation, and scaling of relational databases in the cloud.
+  2. Diffrent engines
+      1. Aurora
+      2. MySQL
+      3. PostgreSQL
+      4. MariaDB
+           1. storage configuration : gp3 includes 3000IOPS

@@ -244,3 +244,15 @@ In the context of Amazon Web Services (AWS) IAM (Identity and Access Management)
       3. PostgreSQL
       4. MariaDB
            1. storage configuration : gp3 includes 3000IOPS
+           2. General Purpose : balance between performance and price. up to 3000IOPS
+           3. Provisioned IOPS Storage : up to 64000 IOPS.
+           4. Magnetic Storage : deprecated. 
+
+**Metadata of EC2**
+  1. curl http://169.254.169.254/latest/meta-data/
+      1. Instance ID
+      2. AMI ID
+      3. Instance type
+      4. Security group information
+      5. IAM roles and temporary security credentials
+

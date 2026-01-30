@@ -23,6 +23,8 @@ https://www.examtopics.com/ : website which offers dump question for the certifi
 
 **CloudFront**
   1. Amazon CloudFront is a globally distributed Content Delivery Network (CDN) service that accelerates the delivery of data, videos, applications, and APIs to users. It works by caching copies of content at edge locations around the world, allowing users to access data from the nearest geographical location, thereby reducing latency.
+  2. Performance, Cost-efficiency
+  3. Web-site acceleration, video streaming, data security.
 <br>
 
 **S3 Cross-Region Replication**
@@ -247,6 +249,7 @@ In the context of Amazon Web Services (AWS) IAM (Identity and Access Management)
            2. General Purpose : balance between performance and price. up to 3000IOPS
            3. Provisioned IOPS Storage : up to 64000 IOPS.
            4. Magnetic Storage : deprecated. 
+<br>
 
 **Metadata of EC2**
   1. curl http://169.254.169.254/latest/meta-data/
@@ -255,4 +258,19 @@ In the context of Amazon Web Services (AWS) IAM (Identity and Access Management)
       3. Instance type
       4. Security group information
       5. IAM roles and temporary security credentials
+<br>
 
+**Lambda**
+  1. a serverless computing service that lets you run code without provisioning or managing servers. You simply upload your code as a Lambda function, and AWS Lambda automatically scales and manages the infrastructure needed to run your code.
+  2. event-driven compute service that runs code in response to events—such as HTTP requests, data changes, or scheduled tasks—without requiring server management, patching, or manual scaling.
+<br>
+
+**AWS Secret Manager**
+  1. a managed service that secures, rotates, and manages sensitive information like database credentials, API keys, and OAuth tokens throughout their lifecycle.
+  2. rotate : for example, API key changes regularly.
+<br>
+
+**AWS System Manager Parameter Store**
+  1. provides secure, hierarchical storage for configuration data, application secrets, and database strings, enabling centralized management across AWS services.
+  2. For example, DB PW, or License Code.
+<br>

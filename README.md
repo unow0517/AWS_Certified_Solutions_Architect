@@ -17,8 +17,9 @@ https://www.examtopics.com/ : website which offers dump question for the certifi
 
 ## Key Concepts
 **S3 Transfer Acceleration**
-  1. This feature utilizes Amazon CloudFront's globally distributed edge locations to speed up uploads to S3.
+  1. S3 Transfer Acceleration is a feature that speeds up the upload and download of objects to and from Amazon S3 by providing a network of edge locations. 
   2. It significantly reduces the time it takes to upload large volumes of data from geographic locations.
+
 <br>
 
 **CloudFront**
@@ -27,6 +28,27 @@ https://www.examtopics.com/ : website which offers dump question for the certifi
   3. Web-site acceleration, video streaming, data security.
 <br>
 
+**Global Accelerator**
+  1. is a networking service that improves the availability and performance of applications with global users. It gives you static IP addresses that act as a fixed entry point to your application endpoints, which could be in different AWS regions or on-premises.
+
+By creating a CloudFront distribution that has both the S3 bucket and the ALB as origins, the company can reduce latency for both the static and dynamic data. The CloudFront distribution acts as a content delivery network (CDN), caching the data closer to the users and reducing the latency. The company can then configure Route 53 to route traffic to the CloudFront distribution, providing improved performance for the web application.
+
+**AWS Global Accelerator** and **Amazon CloudFront** are separate services that use the AWS global network and its edge locations around the world. CloudFront improves performance for both cacheable content (such as images and videos) and dynamic content (such as API acceleration and dynamic site delivery). Global Accelerator improves performance for a wide range of applications over TCP or UDP by proxying packets at the edge to applications running in one or more AWS Regions. Global Accelerator is a good fit for non-HTTP use cases, such as gaming (UDP), IoT (MQTT), or Voice over IP, as well as for HTTP use cases that specifically require static IP addresses or deterministic, fast regional failover. Both services integrate with AWS Shield for DDoS protection.
+<br>
+<br>
+
+**API Acceleration**
+  1. API acceleration encompasses a variety of strategies aimed at optimizing API performance, making applications faster and more reliable.
+<br>
+
+**TCP (Transmission Control Protocol), UDP (User Datagrakm Protocol)**
+  1. are two fundamental protocols within the Internet Protocol suite used for transmitting data over networks.
+  2. TCP
+    - Connection-Oriented: Establishes a connection before data is sent, ensuring both sender and receiver are ready.
+    - Reliability: TCP ensures that all packets arrive and are in the correct order. If packets are lost, they are retransmitted.
+    - Error Checking and Flow Control: Uses checksums for error-checking and implements flow control to manage the rate of data transmission.
+
+     
 **S3 Cross-Region Replication**
   1. feature that automatically replicates data stored in one Amazon S3 bucket to another S3 bucket in a different AWS region. This replication helps enhance data durability, availability, and compliance by ensuring that data is stored across multiple geographic locations.
 <br>
@@ -268,9 +290,16 @@ In the context of Amazon Web Services (AWS) IAM (Identity and Access Management)
 **AWS Secret Manager**
   1. a managed service that secures, rotates, and manages sensitive information like database credentials, API keys, and OAuth tokens throughout their lifecycle.
   2. rotate : for example, API key changes regularly.
+  3. Using AWS Secrets Manager and enabling automatic rotation is the recommended solution for minimizing the operational overhead of credential management. AWS Secrets Manager provides a secure and centralized service for storing and managing secrets, such as database credentials. By leveraging Secrets Manager, the application can retrieve the database credentials programmatically at runtime, eliminating the need to store them locally in a file. Enabling automatic rotation ensures that the database credentials are regularly rotated without manual intervention, enhancing security and compliance.
+
 <br>
 
 **AWS System Manager Parameter Store**
   1. provides secure, hierarchical storage for configuration data, application secrets, and database strings, enabling centralized management across AWS services.
   2. For example, DB PW, or License Code.
+  3. Doesn't offer auto rotation
 <br>
+
+**DNS(Domain Name System)**
+  1. The term DNS name refers to a human-readable address used to identify a resource on the Internet. It is part of the Domain Name System (DNS), which translates these names into IP addresses that computers use to communicate with each other.
+  2. 

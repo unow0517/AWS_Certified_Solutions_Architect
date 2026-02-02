@@ -34,9 +34,13 @@ https://www.examtopics.com/ : website which offers dump question for the certifi
 By creating a CloudFront distribution that has both the S3 bucket and the ALB as origins, the company can reduce latency for both the static and dynamic data. The CloudFront distribution acts as a content delivery network (CDN), caching the data closer to the users and reducing the latency. The company can then configure Route 53 to route traffic to the CloudFront distribution, providing improved performance for the web application.
 
 **AWS Global Accelerator** and **Amazon CloudFront** are separate services that use the AWS global network and its edge locations around the world. CloudFront improves performance for both cacheable content (such as images and videos) and dynamic content (such as API acceleration and dynamic site delivery). Global Accelerator improves performance for a wide range of applications over TCP or UDP by proxying packets at the edge to applications running in one or more AWS Regions. Global Accelerator is a good fit for non-HTTP use cases, such as gaming (UDP), IoT (MQTT), or Voice over IP, as well as for HTTP use cases that specifically require static IP addresses or deterministic, fast regional failover. Both services integrate with AWS Shield for DDoS protection.
-<br>
-<br>
 
+**Quick Comparison**
+
+Global Accelerator → accelerates **dynamic** traffic (APIs, gaming, VoIP, EC2, ALB, NLB).
+
+CloudFront → accelerates **static** content (S3 objects, cached files, media).
+<br>
 **API Acceleration**
   1. API acceleration encompasses a variety of strategies aimed at optimizing API performance, making applications faster and more reliable.
 <br>
@@ -44,10 +48,14 @@ By creating a CloudFront distribution that has both the S3 bucket and the ALB as
 **TCP (Transmission Control Protocol), UDP (User Datagrakm Protocol)**
   1. are two fundamental protocols within the Internet Protocol suite used for transmitting data over networks.
   2. TCP
-    - Connection-Oriented: Establishes a connection before data is sent, ensuring both sender and receiver are ready.
-    - Reliability: TCP ensures that all packets arrive and are in the correct order. If packets are lost, they are retransmitted.
-    - Error Checking and Flow Control: Uses checksums for error-checking and implements flow control to manage the rate of data transmission.
-
+      - Connection-Oriented: Establishes a connection before data is sent, ensuring both sender and receiver are ready.
+      - Reliability: TCP ensures that all packets arrive and are in the correct order. If packets are lost, they are retransmitted.
+      - Error Checking and Flow Control: Uses checksums for error-checking and implements flow control to manage the rate of data transmission.
+  3. UDP
+      - Connectionless: Does not establish a connection before sending data; packets are sent without prior agreement from the receiver.
+      - Unreliable: There are no guarantees that packets arrive in order or even arrive at all. If a packet is lost, it is not retransmitted.
+      - Lower Latency: Due to minimal overhead, UDP is faster, making it suitable for real-time applications where speed is more critical than reliability.
+<br>
      
 **S3 Cross-Region Replication**
   1. feature that automatically replicates data stored in one Amazon S3 bucket to another S3 bucket in a different AWS region. This replication helps enhance data durability, availability, and compliance by ensuring that data is stored across multiple geographic locations.
@@ -302,4 +310,5 @@ In the context of Amazon Web Services (AWS) IAM (Identity and Access Management)
 
 **DNS(Domain Name System)**
   1. The term DNS name refers to a human-readable address used to identify a resource on the Internet. It is part of the Domain Name System (DNS), which translates these names into IP addresses that computers use to communicate with each other.
-  2. 
+  
+Till Frage 13

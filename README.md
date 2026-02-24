@@ -272,9 +272,11 @@ In the context of Amazon Web Services (AWS) IAM (Identity and Access Management)
   1. a managed cloud database service offered by Amazon Web Services (AWS) that simplifies the setup, operation, and scaling of relational databases in the cloud.
   2. Diffrent engines
       1. Aurora
-      2. MySQL
-      3. PostgreSQL
-      4. MariaDB
+          1. Aurora Auto scaling : It enables you to automatically scale your Aurora database instances based on demand, which helps optimize performance and cost.
+          2. Aurora Replicas : are **read-only** copies of your Aurora database instances that help in enhancing performance, improving availability, and allowing for better load distribution.
+      3. MySQL
+      4. PostgreSQL
+      5. MariaDB
            1. storage configuration : gp3 includes 3000IOPS
            2. General Purpose : balance between performance and price. up to 3000IOPS
            3. Provisioned IOPS Storage : up to 64000 IOPS.
@@ -299,7 +301,6 @@ In the context of Amazon Web Services (AWS) IAM (Identity and Access Management)
   1. a managed service that secures, rotates, and manages sensitive information like database credentials, API keys, and OAuth tokens throughout their lifecycle.
   2. rotate : for example, API key changes regularly.
   3. Using AWS Secrets Manager and enabling automatic rotation is the recommended solution for minimizing the operational overhead of credential management. AWS Secrets Manager provides a secure and centralized service for storing and managing secrets, such as database credentials. By leveraging Secrets Manager, the application can retrieve the database credentials programmatically at runtime, eliminating the need to store them locally in a file. Enabling automatic rotation ensures that the database credentials are regularly rotated without manual intervention, enhancing security and compliance.
-
 <br>
 
 **AWS System Manager Parameter Store**
@@ -310,5 +311,17 @@ In the context of Amazon Web Services (AWS) IAM (Identity and Access Management)
 
 **DNS(Domain Name System)**
   1. The term DNS name refers to a human-readable address used to identify a resource on the Internet. It is part of the Domain Name System (DNS), which translates these names into IP addresses that computers use to communicate with each other.
-  
-Till Frage 13
+<br>
+
+**ElastiCache**
+  1. It is a fully managed, in-memory data store service provided by AWS that enhances the performance of applications by improving data retrieval speeds.
+      1. In-Memory Caching
+      2. Automatic Scaling
+      3. Data Persistence
+      4. Multi-AZ Deployment
+      5. Security Features
+
+  2. **ElastiCache for Memcached** is a managed service that simplifies the setup, operation, and scaling of Memcached in the cloud. **Memcached** is an open-source, high-performance, distributed memory caching system designed to store small chunks of arbitrary data (strings, objects) from results of database calls, API calls, or page rendering.
+<br>
+
+Till Frage 14

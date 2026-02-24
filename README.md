@@ -326,11 +326,15 @@ In the context of Amazon Web Services (AWS) IAM (Identity and Access Management)
 
 **AWS Network Firewall**
   1.  is a managed service that offers centralized network protection for your Amazon Virtual Private Cloud (VPC). It provides flexible, scalable, and highly available network security to protect your cloud resources from threats.
+<br>
 
 **AWS Firewall Manager**
   1. centralized management of firewalls across multiple AWS accounts and services.
+<br>
 
 **Traffic Mirroring**
   1. a feature that allows you to capture and inspect network traffic in your Amazon Virtual Private Cloud (VPC). It enables you to create copies of the traffic flowing to and from elastic network interfaces (ENIs) and send them to monitoring or analysis devices in your network.
   2. Use Cases : Security Monitoring, Troubleshooting, Compliance Audits
-  
+<br>
+
+Till Frage 15

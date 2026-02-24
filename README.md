@@ -324,4 +324,13 @@ In the context of Amazon Web Services (AWS) IAM (Identity and Access Management)
   2. **ElastiCache for Memcached** is a managed service that simplifies the setup, operation, and scaling of Memcached in the cloud. **Memcached** is an open-source, high-performance, distributed memory caching system designed to store small chunks of arbitrary data (strings, objects) from results of database calls, API calls, or page rendering.
 <br>
 
-Till Frage 14
+**AWS Network Firewall**
+  1.  is a managed service that offers centralized network protection for your Amazon Virtual Private Cloud (VPC). It provides flexible, scalable, and highly available network security to protect your cloud resources from threats.
+
+**AWS Firewall Manager**
+  1. centralized management of firewalls across multiple AWS accounts and services.
+
+**Traffic Mirroring**
+  1. a feature that allows you to capture and inspect network traffic in your Amazon Virtual Private Cloud (VPC). It enables you to create copies of the traffic flowing to and from elastic network interfaces (ENIs) and send them to monitoring or analysis devices in your network.
+  2. Use Cases : Security Monitoring, Troubleshooting, Compliance Audits
+  

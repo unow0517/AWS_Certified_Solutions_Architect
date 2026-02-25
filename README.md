@@ -85,7 +85,7 @@ CloudFront → accelerates **static** content (S3 objects, cached files, media).
 **Amazon Red Shift**
   1. a fully managed, petabyte-scale data warehouse service in the cloud.
   2. It allows users to run complex queries and analyze large amounts of data quickly.
-  3. Redshift is optimized for high-performance analysis of structured and semi-structured data, making it a key component for data analytics and business intelligence solutions.
+  3. Redshift is optimized for **high-performance analysis** of structured and semi-structured data, making it a key component for **data analytics and business intelligence solutions**.
 <br>
 
 **CloudWatch**
@@ -272,6 +272,8 @@ In the context of Amazon Web Services (AWS) IAM (Identity and Access Management)
   1. a managed cloud database service offered by Amazon Web Services (AWS) that simplifies the setup, operation, and scaling of relational databases in the cloud.
   2. Diffrent engines
       1. Aurora
+         1. AURORA is **5x performance improvement over MySQL** on RDS and **handles more read requests than write**
+         2. Aurora is a fully managed, MySQL-compatible relational database that is designed for high performance and high availability. **Aurora Multi-AZ deployments** automatically maintain a synchronous standby replica in a different Availability Zone to provide high availability. Additionally, **Aurora Auto Scaling** allows you to automatically scale the number of Aurora Replicas in response to read workloads, allowing you to meet the demand of unpredictable read workloads while maintaining high availability. This would provide an automated solution for scaling the database to meet the demand of the application while maintaining high availability.
       2. MySQL
       3. PostgreSQL
       4. MariaDB
@@ -299,7 +301,6 @@ In the context of Amazon Web Services (AWS) IAM (Identity and Access Management)
   1. a managed service that secures, rotates, and manages sensitive information like database credentials, API keys, and OAuth tokens throughout their lifecycle.
   2. rotate : for example, API key changes regularly.
   3. Using AWS Secrets Manager and enabling automatic rotation is the recommended solution for minimizing the operational overhead of credential management. AWS Secrets Manager provides a secure and centralized service for storing and managing secrets, such as database credentials. By leveraging Secrets Manager, the application can retrieve the database credentials programmatically at runtime, eliminating the need to store them locally in a file. Enabling automatic rotation ensures that the database credentials are regularly rotated without manual intervention, enhancing security and compliance.
-
 <br>
 
 **AWS System Manager Parameter Store**
@@ -310,5 +311,11 @@ In the context of Amazon Web Services (AWS) IAM (Identity and Access Management)
 
 **DNS(Domain Name System)**
   1. The term DNS name refers to a human-readable address used to identify a resource on the Internet. It is part of the Domain Name System (DNS), which translates these names into IP addresses that computers use to communicate with each other.
-  
-Till Frage 13
+<br>
+
+**ElastiCache**
+  1. a fully managed in-memory data store service provided by AWS. It supports two major open-source in-memory caching engines: **Redis** and **Memcached**.
+    1. **Redis**: Offers advanced data structures like lists, sets, and sorted sets, along with built-in replication and persistence options.
+    2. **Memcached**: Known for its simplicity and speed, suitable for quick cache solutions.
+
+  2. ElastiCache **speeds up applications** by allowing you to retrieve data from fast, managed, in-memory caches instead of relying entirely on slower disk-based databases.

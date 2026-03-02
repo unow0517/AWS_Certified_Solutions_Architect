@@ -314,8 +314,27 @@ In the context of Amazon Web Services (AWS) IAM (Identity and Access Management)
 <br>
 
 **ElastiCache**
-  1. a fully managed in-memory data store service provided by AWS. It supports two major open-source in-memory caching engines: **Redis** and **Memcached**.
-    1. **Redis**: Offers advanced data structures like lists, sets, and sorted sets, along with built-in replication and persistence options.
-    2. **Memcached**: Known for its simplicity and speed, suitable for quick cache solutions.
+  1. It is a fully managed, in-memory data store service provided by AWS that enhances the performance of applications by improving data retrieval speeds.
+      1. In-Memory Caching
+      2. Automatic Scaling
+      3. Data Persistence
+      4. Multi-AZ Deployment
+      5. Security Features
 
-  2. ElastiCache **speeds up applications** by allowing you to retrieve data from fast, managed, in-memory caches instead of relying entirely on slower disk-based databases.
+  2. **ElastiCache for Memcached** is a managed service that simplifies the setup, operation, and scaling of Memcached in the cloud. **Memcached** is an open-source, high-performance, distributed memory caching system designed to store small chunks of arbitrary data (strings, objects) from results of database calls, API calls, or page rendering.
+<br>
+
+**AWS Network Firewall**
+  1.  is a managed service that offers centralized network protection for your Amazon Virtual Private Cloud (VPC). It provides flexible, scalable, and highly available network security to protect your cloud resources from threats.
+<br>
+
+**AWS Firewall Manager**
+  1. centralized management of firewalls across multiple AWS accounts and services.
+<br>
+
+**Traffic Mirroring**
+  1. a feature that allows you to capture and inspect network traffic in your Amazon Virtual Private Cloud (VPC). It enables you to create copies of the traffic flowing to and from elastic network interfaces (ENIs) and send them to monitoring or analysis devices in your network.
+  2. Use Cases : Security Monitoring, Troubleshooting, Compliance Audits
+<br>
+
+Till Frage 15

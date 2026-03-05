@@ -1,5 +1,5 @@
 # AWS_Certified_Solutions_Architect - Associate
-
+### https://pacloud.tistory.com/42
 ## What To Do Here
 - preparing AWS Solutions Architect Certification.
 - Take note important concepts.
@@ -217,7 +217,7 @@ In the context of Amazon Web Services (AWS) IAM (Identity and Access Management)
 <br>
 
 **Amazon Kinesis Data Analytics**
-  1. is a fully managed service that allows you to process and analyze streaming data in real-time.
+  1. is a fully managed service that allows you to process and analyze streaming data in **real-time**.
   2. It enables users to easily ingest, process, and analyze data streams using standard SQL, opening up opportunities for interactive dashboards and real-time analytics.
   3. For analytic purpose
 <br>
@@ -416,7 +416,17 @@ In the context of Amazon Web Services (AWS) IAM (Identity and Access Management)
   8. Application Layer
 <br>
 
-**Application Load Balancer**
+**Application Load Balancer (ALB)**
+1. a Layer 7 load balancer from Amazon Web Services that distributes incoming HTTP/HTTPS traffic across multiple backend services such as EC2 instances, containers, or IP targets.
+
+It is part of Elastic Load Balancing.
+ALB operates at the application layer (Layer 7) of the OSI model.
+Because ALB works at Layer 7, it can inspect HTTP requests and route based on content.
+ALB is actually an intelligent HTTP router that can route based on:
+- URL path
+- hostname
+- headers
+- **query parameters**
 <br>
 
 **Gateway Load Balancer**
@@ -445,4 +455,40 @@ In the context of Amazon Web Services (AWS) IAM (Identity and Access Management)
           10.1.0.0/16 → VPC1
           10.2.0.0/16 → VPC2
           10.3.0.0/16 → VPC3
-Till Frage 20
+<br>
+
+**click stream data**
+  1. Clickstream data is the record of every action (click or interaction) a user performs while navigating a digital environment such as a website, mobile app, or software interface. It captures the sequence of events during a user session.
+<br>
+
+**Amazon EMR (Elastic MapReduce)**
+1. is a managed big-data processing service from Amazon Web Services that allows you to run distributed data processing frameworks like Spark, Hadoop, Hive, and Presto on scalable clusters of EC2 machines.
+
+2. It is designed for large-scale data processing, such as clickstream analysis, ETL pipelines, machine learning preprocessing, and log analysis.
+<br>
+
+**Real-time Clickstream Data Workflow**
+  Kinesis Data Stream (collect data) -> Kinesis Data Stream (delever) -> S3 -> Redshift (Analysis)
+<br>
+
+**AWS Certificate Manager (ACM)** 
+1. is a service from Amazon Web Services that lets you provision, manage, and automatically renew SSL/TLS certificates used to secure websites and applications.
+<br>
+
+2. It removes the need to manually manage certificates for HTTPS.
+<br>
+
+**AWS WAF (Web Application Firewall)** 
+1. is a security service from Amazon Web Services that protects web applications from common web exploits such as SQL injection, cross-site scripting, and malicious bots.
+<br>
+
+**A Network ACL (Access Control List)**
+   1. is a stateless firewall in Amazon Web Services that controls traffic **entering and leaving subnets** inside a VPC.
+<br>
+
+**Bastion Host**
+  1. A Bastion Host is **a special-purpose server** used to securely access private servers inside a network.
+  2. In cloud environments like Amazon Web Services, a bastion host acts as a jump server that allows administrators to connect to instances in private subnets.
+<br>
+
+#Frage 2

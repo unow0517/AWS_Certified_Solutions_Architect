@@ -47,14 +47,16 @@ CloudFront → accelerates **static** content (S3 objects, cached files, media).
 
 **TCP (Transmission Control Protocol), UDP (User Datagrakm Protocol)**
   1. are two fundamental protocols within the Internet Protocol suite used for transmitting data over networks.
-  2. TCP
-      - Connection-Oriented: Establishes a connection before data is sent, ensuring both sender and receiver are ready.
-      - Reliability: TCP ensures that all packets arrive and are in the correct order. If packets are lost, they are retransmitted.
-      - Error Checking and Flow Control: Uses checksums for error-checking and implements flow control to manage the rate of data transmission.
-  3. UDP
-      - Connectionless: Does not establish a connection before sending data; packets are sent without prior agreement from the receiver.
-      - Unreliable: There are no guarantees that packets arrive in order or even arrive at all. If a packet is lost, it is not retransmitted.
-      - Lower Latency: Due to minimal overhead, UDP is faster, making it suitable for real-time applications where speed is more critical than reliability.
+     1. TCP
+         - Connection-Oriented: Establishes a connection before data is sent, ensuring both sender and receiver are ready.
+         - Reliability: TCP ensures that all packets arrive and are in the correct order. If packets are lost, they are retransmitted.
+         - Error Checking and Flow Control: Uses checksums for error-checking and implements flow control to manage the rate of data transmission.
+     2. UDP
+         - Connectionless: Does not establish a connection before sending data; packets are sent without prior agreement from the receiver.
+         - Unreliable: There are no guarantees that packets arrive in order or even arrive at all. If a packet is lost, it is not retransmitted.
+         - Lower Latency: Due to minimal overhead, UDP is faster, making it suitable for real-time applications where speed is more critical than reliability.
+ - TCP : Web Search, Email, File Sending.. reliability.
+ - UDP : Live Streaming, Online Game.. real-time stuff.
 <br>
      
 **S3 Cross-Region Replication**
@@ -70,6 +72,7 @@ CloudFront → accelerates **static** content (S3 objects, cached files, media).
 **Amazon Elastic Block Store (EBS)**
   1. a high-performance block storage service designed for use with Amazon EC2 (Elastic Compute Cloud).
   2. It provides scalable storage volumes that can be attached to EC2 instances, enabling low-latency access to data for applications such as databases, file systems, and enterprise applications.
+  3. WHy EBS over S3? S3 is for the access through internet. EBS is mainly for EC2.
 <br>
 
 **AWS Edge Locations**
@@ -146,6 +149,10 @@ In the context of Amazon Web Services (AWS) IAM (Identity and Access Management)
 **IAM (Identity and Access Management)**
   1.  helps you control access to your AWS resources.
   2.  With IAM, you can create and manage AWS users and groups, and use permissions to allow or deny their access to AWS resources, ensuring only authorized users can perform actions.
+  3.  IAM role : is an AWS resource that allows you to **delegate access to AWS resources and services**. You can create an IAM role that grants access to the S3 bucket and then attach the role to the EC2 instances. This will allow the EC2 instances to access the S3 bucket and the documents stored within it.
+  4.  IAM policy : is used to **define permissions for an IAM user or group**, not for an EC2 instance.
+  5.  IAM Group : is used to group together IAM users and policies, not to grant access to resources.
+  6.  IAM user : is used to **represent a person or service that interacts with AWS resources**, not to grant access to resources.
 <br>
 
 **IAM Role**
@@ -161,10 +168,7 @@ In the context of Amazon Web Services (AWS) IAM (Identity and Access Management)
   1. allows instances in a private subnet to access the internet while preventing the internet from initiating connections to those instances.
 <br>
 
-**EBS (Elastic Volumn Store)**
-   1. persistent block storage service designed for use with Amazon EC2 instances.
-   2. It provides highly available and durable storage that can be easily attached to instances, making it suitable for a wide range of applications.
-   3. WHy EBS over S3? S3 is for the access through internet. EBS is mainly for EC2.
+
 <br>
 
 **EFS (Elastic File System)**
@@ -211,7 +215,7 @@ In the context of Amazon Web Services (AWS) IAM (Identity and Access Management)
 
 **Amazon Simple Queue Service (Amazon SOS)**
   1. is a fully managed message queuing service that enables applications to communicate and coordinate through message-based workflows.
-  2. SQS allows decoupling of components in distributed systems, which enhances scalability and reliability.
+  2. SQS allows **decoupling** of components in distributed systems, which enhances scalability and reliability.
 <br>
 
 **Decoupling**
@@ -326,6 +330,7 @@ In the context of Amazon Web Services (AWS) IAM (Identity and Access Management)
 
 **AWS Network Firewall**
   1.  is a managed service that offers centralized network protection for your Amazon Virtual Private Cloud (VPC). It provides flexible, scalable, and highly available network security to protect your cloud resources from threats.
+  2.  It is for traffic inspection.
 <br>
 
 **AWS Firewall Manager**
@@ -337,4 +342,92 @@ In the context of Amazon Web Services (AWS) IAM (Identity and Access Management)
   2. Use Cases : Security Monitoring, Troubleshooting, Compliance Audits
 <br>
 
-Till Frage 15
+**Elastic Network Interfaces**
+  1.  a key component of Amazon Web Services (AWS) networking architecture, particularly within Amazon Elastic Compute Cloud (EC2). An ENI is a virtual network interface that you can attach to an instance in a Virtual Private Cloud (VPC).
+  2.  provide flexibility and enhance the networking capabilities of EC2 instances, facilitating better traffic management and higher availability.
+<br>
+
+**data lake**
+  1. A data lake is a centralized repository that allows you to store large amounts of structured, semi-structured, and unstructured data in its native format until it's needed for analysis.
+  2. You just put eveything in.
+<br>
+
+**Amazon QuickSight**
+  1. a cloud-powered business intelligence (BI) service offered by AWS that enables users to visualize their data, perform ad-hoc analysis, and create interactive dashboards.
+  <br>
+
+**AWS Glue**
+  1. AWS Glue is a fully managed extract, transform, and load (ETL) service that simplifies the process of moving data between data sources and data lakes. It provides features like data cataloging, schema discovery, and job scheduling. Two key components of AWS Glue are *tables* and *crawlers*.
+   
+  2. **Crawlers** are automated processes that scan your data stores to discover and catalog your data. They infer the schema, data types, and relationships, making them essential for organizing data within the Glue Data Catalog.
+   
+  3. **Tables** in AWS Glue refer to the metadata representations of the data stored in various data sources. When a crawler runs, it creates or updates tables in the Glue Data Catalog based on the discovered data.
+<br>
+
+**Data Cataloging**
+  1. is the process of creating an organized inventory of data assets within an organization. It involves collecting, organizing, and managing metadata about data sources to make it easier for users to discover, understand, and utilize data effectively.
+<br>
+
+**stateless**
+   1. refers to a system or application design philosophy where each request from a client is treated as an independent transaction, unrelated to any previous requests.
+<br>
+
+**three-tier web application**
+  1. A three-tier web application architecture divides the application into three distinct layers or tiers: the presentation layer, the business logic layer, and the data layer. This separation enhances modularity, scalability, and maintainability.
+
+**AWS marketplace**
+  1. is a digital catalog that allows users to find, buy, and deploy software and services that run on Amazon Web Services (AWS).
+  2. Tech Companies, software vendors sell their products here.
+<br>
+
+**Network Load Balancer**
+  1. is designed to handle extreme traffic volumes while maintaining high availability and reliability. It operates at the transport layer (Layer 4) and is optimized to manage large-scale, TCP traffic across multiple availability zones.
+  2. Purpose:
+      - Distribute TCP / UDP traffic to backend servers with extremely low latency and very high throughput.
+<br>
+
+**Layer 4 (transport layer)**
+  1. The transport layer, also known as Layer 4 in the OSI (Open Systems Interconnection) model, is responsible for the end-to-end communication over networks. It ensures reliable data transfer between devices and facilitates the proper handling of data packets.
+
+<br>
+
+**OSI model (Open Systems Interconnection)**
+  1. The OSI model is a conceptual framework used to understand and standardize the functions of a networking system. It divides the communication process into seven distinct layers, allowing different hardware and software systems to communicate with one another.
+  2. Physical Layer
+  3. Data Link Layer
+  4. Network Layer
+  5. Transport Layer
+  6. Session Layer
+  7. Presentation Layer
+  8. Application Layer
+<br>
+
+**Application Load Balancer**
+<br>
+
+**Gateway Load Balancer**
+  1. is a specialized load balancer designed to deploy, scale, and manage network virtual appliances such as firewalls, intrusion detection systems, or packet inspection tools.
+  2. It combines the capabilities of:
+    1. Transparent network gateway
+    2. Load balancer for security appliances
+  3. GWLB allows you to insert security appliances into network traffic transparently.
+  4. Purpose:
+      - Insert network security appliances into traffic flow.
+      - Instead of sending traffic directly to an app, GWLB sends it to security devices first.
+<br>
+
+**AWS Transit Gateway**
+   1. is a network hub that connects multiple VPCs, VPNs, and on-premise networks together.
+   2. Think of it as a central router for your AWS networks. Instead of N² connections, you get one central hub.
+   3. TGW can connect:
+    Multiple Amazon Virtual Private Cloud
+      1. Site-to-site VPN
+      2. Direct Connect
+      3. Other AWS accounts
+      4. Other AWS regions
+   4. TGW Route Tables  
+      1. Control which networks can communicate.
+        Example:
+          10.1.0.0/16 → VPC1
+          10.2.0.0/16 → VPC2
+          10.3.0.0/16 → VPC3

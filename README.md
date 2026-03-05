@@ -75,6 +75,20 @@ CloudFront → accelerates **static** content (S3 objects, cached files, media).
   3. WHy EBS over S3? S3 is for the access through internet. EBS is mainly for EC2.
 <br>
 
+**EBS Snapshot**
+  1. An EBS Snapshot is a backup of an EBS volume stored in Amazon S3. It allows you to restore your data or create new volumes from that backup.
+  2. How Restore Works : You can create a new EBS volume from a snapshot. Snapshot -> Restore Volume -> Attach to EC2
+<br>
+
+**EBS fast snapshot restore**
+  1. is a feature of Amazon Elastic Block Store that allows you to create volumes from snapshots with full performance immediately.
+  2. without FSR : Snapshot -> Create EBS Volume -> Attach to EC2
+     1. WHen application read blocks for the first time:
+        1. Block requested -> fetched from S3 -> written to EBS
+Database server startup may take minutes
+3. with FSR : Snapshot -> Fast Snapshot restore -> New EBS Volume -> Immediate Full Performance
+
+
 **AWS Edge Locations**
   1. data centers located in various geographical regions around the world, primarily used for delivering content via Amazon CloudFront, AWS's Content Delivery Network (CDN).
   2. These locations are strategically placed to provide low-latency access to applications, ensuring faster data transfer and improved user experience.
@@ -431,3 +445,4 @@ In the context of Amazon Web Services (AWS) IAM (Identity and Access Management)
           10.1.0.0/16 → VPC1
           10.2.0.0/16 → VPC2
           10.3.0.0/16 → VPC3
+Till Frage 20
